@@ -1,0 +1,17 @@
+body {
+		background-color:#121212;
+		color: white;
+}
+
+.custom-navbar {
+	background-color: #272727;
+}
+
+.custom-table {
+	background-color: #282828;
+	
+}
+
+.custom-card {
+	border-color: #282828; ;
+}
