@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <title>Neues TODO erstellen</title>
+    <title>TODO bearbeiten</title>
   </head>
   <body>
 
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link active" href="new_todo.html">Neu erstellen</a>
+          <a class="nav-item nav-link" href="new_todo.html">Neu erstellen</a>
           <a class="nav-item nav-link" href="#">Impressum</a>
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
         </div>
@@ -33,32 +33,35 @@
     <div class="container" style="max-width: 600px;">
 
         <h1 class="display-4 mt-4 mb-4">
-            Neues TODO
+            TODO Bearbeiten
         </h1>
         <form class="" style="max-width: 600px;">
             
             <div class="form-group" >
               <label for="exampleFormControlTextarea1">TODO Beschreibung:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter a description for your new TODO..."></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter a description for your new TODO...">Beispielseite mit dem Bootstrap Framework anlegen</textarea>
             </div>
 
             <div class="form-group " >
                 <label for="exampleFormControlTextarea1">Fälligkeitsdatum:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Example: 01. Januar 1999" ></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Example: 01. Januar 1999" >26. April 2018</textarea>
             </div>
 
             <div class="form-group mb-4" >
                 <label for="exampleFormControlTextarea1">Abgeschlossen in %:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="%">0%</textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="0%" >0%</textarea>
             </div>
 
             <button type="submit" class="btn btn-lg btn-primary btn-block mx-auto">
-                Erstellen
+                Speichern
             </button>
             
             <div class="text-center mt-4">
                     <a href="#" class=" float-right" style="color: red;">Abbrechen</a>
             </div>
+            
+
+
           </form>
 
 
