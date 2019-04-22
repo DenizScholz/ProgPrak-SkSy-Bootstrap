@@ -13,64 +13,69 @@
   </head>
   <body>
 
-    <!--- Navigationsleiste --->
-    <nav class="navbar navbar-expand-md navbar-dark  custom-navbar">
-      <a class="navbar-brand" href="../index.html">TODO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="new_todo.html">Neu erstellen</a>
-          <a class="nav-item nav-link active" href="impressum.html">Impressum</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
+  <!--- Navigationsleiste --->
+  <!-- navbar-expand : responsive collapsing -->
+  <nav class="navbar navbar-expand-md navbar-dark  custom-navbar">
+    <!-- Logo -->
+    <a class="navbar-brand" href="../index.html">TODO</a>
+    <!-- "zusammenfallen" der Elemente bei kleineren Bildschirmen -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="new_todo.html">Neu erstellen</a>
+        <a class="nav-item nav-link active" href="impressum.html">Impressum</a>
+        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seiteninhalt --->
+  <!-- Container der die volle breite nutzt, mt : margin-top  -->
+  <div class="container-fluid mt-3 " style="max-width: 900px;">
+    <!-- display : header preset, py : padding top/bottom -->
+    <h5 class="display-4 py-5 text-center">Impressum</h5>
+    <!-- erschafft eine Reihe für Bootstrap Grid -->
+    <div class="row">	
+      <div class="col-md-6">
+        <div class="jumbotron" style="background-color: #282828; padding:20px;">
+          <h1 class="display-6">Deniz Scholz</h1>
+          <!-- my : margin top/bottom -->
+          <hr class="my-4" style="background-color: white;">
+          <p>4379 Frum Street <br> 
+          Nashville, 37212 <br>
+          Tennessee USA <br>
+          <br>
+          615-297-9607 <br>
+          email@email.email
+          </p>
+        </div>
+      </div>	
+      <div class="col-md-6" >
+        <div class="jumbotron" style="background-color: #282828; padding:20px;">
+          <h1 class="display-6">Marcin Lewandowski</h1>
+          <!-- my : margin top/bottom -->
+          <hr class="my-4" style="background-color: white;">
+          <p>112 Camel Back Road <br> 
+          Tulsa, 74145 <br>
+          Oklahoma USA <br>
+          <br>
+          918-634-4465 <br>
+          email@email.email
+          </p>
         </div>
       </div>
-    </nav>
+      </div>
+  </div>
 
-    <!--- Seiteninhalt --->
-    <div class="container-fluid mt-3 " style="max-width: 900px;">
-      <h5 class="display-4 py-5 text-center">Impressum</h5>
-	  
-	    <div class="row">
-		
-		<div class="col-lg-6">
-			<div class="jumbotron" style="background-color: #282828; padding:20px;">
-				<h1 class="display-6">Deniz Scholz</h1>
-				<hr class="my-4" style="background-color: white;">
-				<p>4379 Frum Street <br> 
-				Nashville, 37212 <br>
-				Tennessee USA <br>
-				<br>
-				615-297-9607 <br>
-				email@email.email
-				</p>
-			</div>
-		</div>
-		
-		<div class="col-lg-6" >
-			<div class="jumbotron" style="background-color: #282828; padding:20px;">
-				<h1 class="display-6">Marcin Lewandowski</h1>
-				<hr class="my-4" style="background-color: white;">
-				<p>112 Camel Back Road <br> 
-				Tulsa, 74145 <br>
-				Oklahoma USA <br>
-				<br>
-				918-634-4465 <br>
-				email@email.email
-				</p>
-			</div>
-		</div>
-        </div>
-    </div>
-
-	<!-- footer   -->
-	<footer class="page-footer font-small blue pt-4 fixed-bottom myfooter" >
+  <!-- footer   -->
+  <footer class="page-footer font-small blue pt-4 fixed-bottom myfooter" >
     <div class="footer-copyright text-center py-3"  style="background-color:#272727; margin-top: 30px; width: 100%; height: 60px;">
-            <h5>Powered by PP:SkSy.SoSe19</h5>
+      <h5>Powered by PP:SkSy.SoSe19</h5>
     </div>
-	</footer>
+  </footer>
 
 
     
