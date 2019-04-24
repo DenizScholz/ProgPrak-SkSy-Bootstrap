@@ -1,35 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>TODO</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--- Navigationsleiste --->
-    <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
-      <a class="navbar-brand" href="index.html">TODO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Übersicht <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="html/new_todo.html">Neu erstellen</a>
-          <a class="nav-item nav-link" href="html/impressum.html">Impressum</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
-        </div>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>TODO</title>
+</head>
+
+<body>
+
+  <!--- Navigationsleiste --->
+  <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+    <a class="navbar-brand" href="index.html">TODO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Übersicht <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="html/new_todo.html">Neu erstellen</a>
+        <a class="nav-item nav-link" href="html/impressum.html">Impressum</a>
+        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!--- Übersicht Anzahl TODO'S Erledigt/Nicht Erledigt 
+  <!--- Übersicht Anzahl TODO'S Erledigt/Nicht Erledigt 
     <div class="container">
       <div class="row m-0 mt-1">
         <div class="col-sm-12 col-md-4 bg-info text-center border border-dark rounded">
@@ -48,81 +52,103 @@
     </div>
     --->
 
-    <!--- Tabelle von TODO's --->
-    <div class="container-fluid mt-3 " style="max-width: 900px;">
-      <h5 class="display-4 py-5 text-center">Übersicht</h5>
-      <div class="card border border-dark rounded">
-        <div class="table-responsive-lg">
+  <!--- Tabelle von TODO's --->
+  <div class="container-fluid mt-3 " style="max-width: 900px;">
+    <h5 class="display-4 py-5 text-center">Übersicht</h5>
+    <div class="card border border-dark rounded">
+      <div class="table-responsive-lg">
         <table class="table table-dark table-hover custom-table m-0">
           <thead>
             <tr>
-              <th scope="col" ><div class="list-inline-item">TODO's</div> <small class="text-muted"> - Click to edit</small> </th>
+              <th scope="col">
+                <div class="list-inline-item">TODO's</div> <small class="text-muted"> - Click to edit</small>
+              </th>
               <th scope="col">Datum</th>
               <th scope="col">%</th>
             </tr>
           </thead>
           <tbody>
             <tr onclick="window.location='#'; console.log('Clicked')">
-              <td>Beispielseite mit dem Bootstrap Framework anlegen <br><a href="html/edit_todo.html" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+              <td>Beispielseite mit dem Bootstrap Framework anlegen <br><a href="html/edit_todo.html"
+                  class="text-muted "><small>Bearbeiten</small></a><a href="#"
+                  class="text-muted ml-1"><small>Löschen</small></a></td>
               <td>26. April 2018</td>
               <td>0%</td>
             </tr>
             <tr>
-              <td>Eine Übersichtsseite mit mehreren Beispiel TODOs (Tabellarisch) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+              <td>Eine Übersichtsseite mit mehreren Beispiel TODOs (Tabellarisch) <br><a href="#"
+                  class="text-muted "><small>Bearbeiten</small></a><a href="#"
+                  class="text-muted ml-1"><small>Löschen</small></a></td>
               <td>20. Mai 2017</td>
               <td>50%</td>
             </tr>
             <tr>
-              <td>Eine Seite um ein neues TODO anlegen zu können <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+              <td>Eine Seite um ein neues TODO anlegen zu können <br><a href="#"
+                  class="text-muted "><small>Bearbeiten</small></a><a href="#"
+                  class="text-muted ml-1"><small>Löschen</small></a></td>
               <td>15. April 2019</td>
               <td>80%</td>
             </tr>
             <tr>
-              <td>Eine Seite um zu demonstrieren wie ein TODO editiert werden kann <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+              <td>Eine Seite um zu demonstrieren wie ein TODO editiert werden kann <br><a href="#"
+                  class="text-muted "><small>Bearbeiten</small></a><a href="#"
+                  class="text-muted ml-1"><small>Löschen</small></a></td>
               <td>19. April 2019</td>
               <td>75%</td>
             </tr>
             <tr>
-              <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
+              <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a
+                  href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
               <td>15. April 2019</td>
               <td>20%</td>
             </tr>
             <tr>
-                <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
-                <td>15. April 2019</td>
-                <td>20%</td>
-              </tr>
-              <tr>
-                  <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
-                  <td>15. April 2019</td>
-                  <td>20%</td>
-                </tr>
-                <tr>
-                    <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
-                    <td>15. April 2019</td>
-                    <td>20%</td>
-                  </tr>
-                  <tr>
-                      <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
-                      <td>15. April 2019</td>
-                      <td>20%</td>
-                    </tr>
+              <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a
+                  href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
+              <td>15. April 2019</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a
+                  href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
+              <td>15. April 2019</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a
+                  href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
+              <td>15. April 2019</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a
+                  href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
+              <td>15. April 2019</td>
+              <td>20%</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      </div>
-	  
     </div>
-	
-	<!-- footer -->
-	<div class="footer navbar-fixed-bottom" style="background-color:#272727; margin-top: 30px; padding: 20px;">
-		<h5 style="text-align: center">Powered by PP:SkSy.SoSe19</h5>
-	</div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+  </div>
+
+  <!-- footer -->
+  <div class="footer navbar-fixed-bottom" style="background-color:#272727; margin-top: 30px; padding: 20px;">
+    <h5 style="text-align: center">Powered by PP:SkSy.SoSe19</h5>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

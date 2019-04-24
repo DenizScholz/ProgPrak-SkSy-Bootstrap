@@ -1,6 +1,6 @@
 body {
-		background-color:#121212;
-		color: white;
+	background-color: #121212;
+	color: white;
 }
 
 .custom-navbar {
@@ -9,22 +9,20 @@ body {
 
 .custom-table {
 	background-color: #282828;
-	
+
 }
 
 .custom-card {
-	border-color: #282828; ;
+	border-color: #282828;
 }
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-  .myfooter {
-  	position: relative;
-  }
+	.myfooter {
+		position: relative;
+	}
 }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
 
-}
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
