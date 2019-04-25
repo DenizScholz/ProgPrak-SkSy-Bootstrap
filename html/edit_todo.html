@@ -5,24 +5,26 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="../css/index.css">
-  <title>TODO Bearbeiten</title>
+  <!-- Page title -->
+  <title>TODO bearbeiten</title>
 </head>
 
 <body>
-
-  <!--- Navigationsleiste --->
-  <nav class="navbar navbar-expand-md navbar-dark  custom-navbar">
+  <!--- Navbar --->
+  <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+    <!-- Navbar Brand -->
     <a class="navbar-brand" href="../index.html">TODO</a>
+    <!-- Navbar Toggler -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- Navbar Links -->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
@@ -33,42 +35,40 @@
     </div>
   </nav>
 
-  <!-- Neu Erstellen Form -->
+  <!-- Form Container -->
   <div class="container" style="max-width: 600px;">
-
-    <h1 class="display-4 mt-4 mb-4">
-      TODO Bearbeiten
-    </h1>
-    <form class="" style="max-width: 600px;">
-
+    <!-- Heading -->
+    <h1 class="display-4 mt-4 mb-4">TODO bearbeiten</h1>
+    <!-- Form -->
+    <form style="max-width: 600px;">
+      <!-- Form Group Description -->
       <div class="form-group">
         <label for="exampleFormControlTextarea1">TODO Beschreibung:</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-          placeholder="Enter a description for your TODO...">Beispielseite mit dem Bootstrap Framework anlegen </textarea>
+          placeholder="Enter a description for your new TODO...">Beispielseite mit dem Bootstrap Framework anlegen</textarea>
       </div>
-
+      <!-- Form Group due date -->
       <div class="form-group ">
         <label for="exampleFormControlTextarea1">Fälligkeitsdatum:</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
           placeholder="Example: 01. Januar 1999">26. April 2018</textarea>
       </div>
-
+      <!-- Form Group Finished in % -->
       <div class="form-group mb-4">
         <label for="exampleFormControlTextarea1">Abgeschlossen in %:</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="%">0%</textarea>
       </div>
-
+      <!-- Submit Button -->
       <button type="submit" class="btn btn-lg btn-primary btn-block mx-auto">
-        Erstellen
+        Änderungen speichern
       </button>
-
+      <!-- Cancel Button -->
       <div class="row text-center mt-4 py-4">
         <div class="col">
-          <a href="#" class=" float-right" style="color: red;">Abbrechen</a>
+          <a href="../index.html" class=" float-right" style="color: red;">Abbrechen</a>
         </div>
       </div>
     </form>
-
 
   </div>
 
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-  <!-- Optional JavaScript -->
+  <!-- Optional JavaScript - BOOTSTRAP -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
