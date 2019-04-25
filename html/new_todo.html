@@ -1,75 +1,96 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <!-- Page title -->
+  <title>TODO erstellen</title>
+</head>
 
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <title>Neues TODO erstellen</title>
-  </head>
-  <body>
+<body>
+  <!--- Navbar --->
+  <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand" href="../index.html">TODO</a>
+    <!-- Navbar Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="new_todo.html">Neu erstellen</a>
+        <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
+      </div>
+    </div>
+  </nav>
 
-    <!--- Navigationsleiste --->
-    <nav class="navbar navbar-expand-md navbar-dark  custom-navbar">
-      <a class="navbar-brand" href="../index.html">TODO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <!-- Form Container -->
+  <div class="container" style="max-width: 600px;">
+    <!-- Heading -->
+    <h1 class="display-4 mt-4 mb-4">TODO erstellen</h1>
+    <!-- Form -->
+    <form style="max-width: 600px;">
+      <!-- Form Group Description -->
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">TODO Beschreibung:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+          placeholder="Enter a description for your new TODO..."></textarea>
+      </div>
+      <!-- Form Group due date -->
+      <div class="form-group ">
+        <label for="exampleFormControlTextarea1">Fälligkeitsdatum:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+          placeholder="Example: 01. Januar 1999"></textarea>
+      </div>
+      <!-- Form Group Finished in % -->
+      <div class="form-group mb-4">
+        <label for="exampleFormControlTextarea1">Abgeschlossen in %:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="%">0%</textarea>
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-lg btn-primary btn-block mx-auto">
+        Neues TODO erstellen
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link active" href="new_todo.html">Neu erstellen</a>
-          <a class="nav-item nav-link" href="#">Impressum</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
+      <!-- Cancel Button -->
+      <div class="row text-center mt-4 py-4">
+        <div class="col">
+          <a href="../index.html" class=" float-right" style="color: red;">Abbrechen</a>
         </div>
       </div>
-    </nav>
+    </form>
 
-    <!-- Neu Erstellen Form -->
-    <div class="container" style="max-width: 600px;">
+  </div>
 
-        <h1 class="display-4 mt-4 mb-4">
-            Neues TODO
-        </h1>
-        <form class="" style="max-width: 600px;">
-            
-            <div class="form-group" >
-              <label for="exampleFormControlTextarea1">TODO Beschreibung:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter a description for your new TODO..."></textarea>
-            </div>
-
-            <div class="form-group " >
-                <label for="exampleFormControlTextarea1">Fälligkeitsdatum:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Example: 01. Januar 1999" ></textarea>
-            </div>
-
-            <div class="form-group mb-4" >
-                <label for="exampleFormControlTextarea1">Abgeschlossen in %:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="%">0%</textarea>
-            </div>
-
-            <button type="submit" class="btn btn-lg btn-primary btn-block mx-auto">
-                Erstellen
-            </button>
-            
-            <div class="text-center mt-4">
-                    <a href="#" class=" float-right" style="color: red;">Abbrechen</a>
-            </div>
-          </form>
-
-
+  <!-- footer -->
+  <div id="footer">
+    <div class="container">
+      <h5 class="footer-block text-center">Powered by PP:SkSy.SoSe19</h5>
     </div>
-    
-     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-  </body>
+  </div>
+
+  <!-- Optional JavaScript - BOOTSTRAP -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+</body>
+
 </html>
