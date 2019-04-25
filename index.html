@@ -13,76 +13,73 @@
   </head>
   <body>
 
-    <!--- Navigationsleiste --->
-    <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
-      <a class="navbar-brand" href="index.html">TODO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Übersicht <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="html/new_todo.html">Neu erstellen</a>
-          <a class="nav-item nav-link" href="html/impressum.html">Impressum</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
-        </div>
-      </div>
-    </nav>
-
-    <!--- Übersicht Anzahl TODO'S Erledigt/Nicht Erledigt 
-    <div class="container">
-      <div class="row m-0 mt-1">
-        <div class="col-sm-12 col-md-4 bg-info text-center border border-dark rounded">
-          <small>Insgesamt</small>
-          <h1 class="display-4">5</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 bg-success text-center border border-dark rounded">
-          <small>Erledigt</small>
-          <h1 class="display-4">0</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 bg-danger text-center border border-dark rounded">
-          <small>TODO</small>
-          <h1 class="display-4">5</h1>
-        </div>
+  <!--- Navigationsleiste --->
+  <!-- navbar-expand : responsive collapsing -->
+  <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">TODO</a>
+    <!-- der button nach dem "zusammenfallen" der Elemente bei kleineren Bildschirmen -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- "zusammenfallen" der Elemente bei kleineren Bildschirmen -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Übersicht <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="html/new_todo.html">Neu erstellen</a>
+        <a class="nav-item nav-link" href="html/impressum.html">Impressum</a>
+        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
       </div>
     </div>
-    --->
+  </nav>
 
-    <!--- Tabelle von TODO's --->
-    <div class="container-fluid mt-3 " style="max-width: 900px;">
-      <h5 class="display-4 py-5 text-center">Übersicht</h5>
-      <div class="card border border-dark rounded">
-        <div class="table-responsive-lg">
-        <table class="table table-dark table-hover custom-table m-0">
-          <thead>
-            <tr>
-              <th scope="col" ><div class="list-inline-item">TODO's</div> <small class="text-muted"> - Click to edit</small> </th>
-              <th scope="col">Datum</th>
-              <th scope="col">%</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr onclick="window.location='#'; console.log('Clicked')">
-              <td>Beispielseite mit dem Bootstrap Framework anlegen <br><a href="html/edit_todo.html" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
-              <td>26. April 2018</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Eine Übersichtsseite mit mehreren Beispiel TODOs (Tabellarisch) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
-              <td>20. Mai 2017</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>Eine Seite um ein neues TODO anlegen zu können <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
-              <td>15. April 2019</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>Eine Seite um zu demonstrieren wie ein TODO editiert werden kann <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
-              <td>19. April 2019</td>
-              <td>75%</td>
-            </tr>
-            <tr>
+
+
+  <!--- Tabelle von TODO's --->
+  <!-- Container der die volle breite nutzt, mt : margin-top  -->
+  <div class="container-fluid mt-3 " style="max-width: 900px;">
+    <!-- display : header preset, py : padding top/bottom -->
+    <h5 class="display-4 py-5 text-center">Übersicht</h5>
+    <div class="card border border-dark rounded">
+      <div class="table-responsive-lg">
+      <!-- tabelle für die TODO's -->
+      <table class="table table-dark table-hover custom-table m-0">
+        <!-- tabellenüberschriften -->
+        <thead>
+          <tr>
+            <th scope="col" ><div class="list-inline-item">TODO's</div> <small class="text-muted"> - Click to edit</small> </th>
+            <th scope="col">Datum</th>
+            <th scope="col">%</th>
+          </tr>
+        </thead>
+        <!-- tabellendaten -->
+        <tbody>
+          <tr onclick="window.location='#'; console.log('Clicked')">
+            <td>Beispielseite mit dem Bootstrap Framework anlegen <br><a href="html/edit_todo.html" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+            <td>26. April 2018</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Eine Übersichtsseite mit mehreren Beispiel TODOs (Tabellarisch) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+            <td>20. Mai 2017</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Eine Seite um ein neues TODO anlegen zu können <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+            <td>15. April 2019</td>
+            <td>80%</td>
+          </tr>
+          <tr>
+            <td>Eine Seite um zu demonstrieren wie ein TODO editiert werden kann <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a></td>
+            <td>19. April 2019</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
+            <td>15. April 2019</td>
+            <td>20%</td>
+          </tr>
+          <tr>
               <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
               <td>15. April 2019</td>
               <td>20%</td>
@@ -102,19 +99,15 @@
                     <td>15. April 2019</td>
                     <td>20%</td>
                   </tr>
-                  <tr>
-                      <td>Ein Impressum (Name der Autoren) <br><a href="#" class="text-muted "><small>Bearbeiten</small></a><a href="#" class="text-muted ml-1"><small>Löschen</small></a> </td>
-                      <td>15. April 2019</td>
-                      <td>20%</td>
-                    </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
-	  
+        </tbody>
+      </table>
     </div>
+    </div>
+	  
+  </div>
 	
 	<!-- footer -->
+  <!-- ein footer der immer unten ist, pt : padding top -->
 	<div class="footer navbar-fixed-bottom" style="background-color:#272727; margin-top: 30px; padding: 20px;">
 		<h5 style="text-align: center">Powered by PP:SkSy.SoSe19</h5>
 	</div>

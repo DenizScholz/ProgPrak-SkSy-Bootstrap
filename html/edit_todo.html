@@ -13,61 +13,66 @@
   </head>
   <body>
 
-    <!--- Navigationsleiste --->
-    <nav class="navbar navbar-expand-md navbar-dark  custom-navbar">
-      <a class="navbar-brand" href="../index.html">TODO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="new_todo.html">Neu erstellen</a>
-          <a class="nav-item nav-link" href="impressum.html">Impressum</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
-        </div>
+  <!--- Navigationsleiste --->
+  <!-- navbar-expand : responsive collapsing -->
+  <nav class="navbar navbar-expand-md navbar-dark  custom-navbar">
+    <!-- Logo -->
+    <a class="navbar-brand" href="../index.html">TODO</a>
+    <!-- der button nach dem "zusammenfallen" der Elemente bei kleineren Bildschirmen -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- "zusammenfallen" der Elemente bei kleineren Bildschirmen -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="../index.html">Übersicht <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="new_todo.html">Neu erstellen</a>
+        <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More..</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Neu Erstellen Form -->
-    <div class="container" style="max-width: 600px;">
+  <!-- Neu Erstellen Form -->
+  <div class="container" style="max-width: 600px;">
+      <!-- display : header preset, mt : margin-top , mb : margin-bottom -->
+      <h1 class="display-4 mt-4 mb-4">
+          TODO Bearbeiten
+      </h1>
+      <!-- formular für den edit -->
+      <form class="" style="max-width: 600px;">
+        <!-- beschreibungsfeld -->
+        <div class="form-group" >
+          <label for="exampleFormControlTextarea1">TODO Beschreibung:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter a description for your new TODO...">Beispielseite mit dem Bootstrap Framework anlegen</textarea>
+        </div>
+        
+        <!-- datumfeld -->
+        <div class="form-group " >
+            <label for="exampleFormControlTextarea1">Fälligkeitsdatum:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Example: 01. Januar 1999" >26. April 2018</textarea>
+        </div>
 
-        <h1 class="display-4 mt-4 mb-4">
-            TODO Bearbeiten
-        </h1>
-        <form class="" style="max-width: 600px;">
+        <!-- abgeschlossene prozente feld, mb : margin-bottom -->
+        <div class="form-group mb-4" >
+            <label for="exampleFormControlTextarea1">Abgeschlossen in %:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="0%" >0%</textarea>
+        </div>
+
+        <!-- button zum submiten, mx : margin left/right -->
+        <button type="submit" class="btn btn-lg btn-primary btn-block mx-auto">
+            Speichern
+        </button>
             
-            <div class="form-group" >
-              <label for="exampleFormControlTextarea1">TODO Beschreibung:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter a description for your new TODO...">Beispielseite mit dem Bootstrap Framework anlegen</textarea>
-            </div>
-
-            <div class="form-group " >
-                <label for="exampleFormControlTextarea1">Fälligkeitsdatum:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Example: 01. Januar 1999" >26. April 2018</textarea>
-            </div>
-
-            <div class="form-group mb-4" >
-                <label for="exampleFormControlTextarea1">Abgeschlossen in %:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="0%" >0%</textarea>
-            </div>
-
-            <button type="submit" class="btn btn-lg btn-primary btn-block mx-auto">
-                Speichern
-            </button>
+        <div class="text-center mt-4">
+                  <a href="#" class=" float-right" style="color: red;">Abbrechen</a>
+        </div>
             
-            <div class="text-center mt-4">
-                    <a href="#" class=" float-right" style="color: red;">Abbrechen</a>
-            </div>
-            
-
-
-          </form>
-
-
+      </form>
     </div>
 	
 	<!-- footer -->
+  <!-- ein footer der immer unten ist, pt : padding top -->
 	<footer class="page-footer font-small blue pt-4 fixed-bottom myfooter">
     <div class="footer-copyright text-center py-3" style="background-color:#272727; margin-top: 30px; width: 100%; height: 60px;">
             <h5>Powered by PP:SkSy.SoSe19</h5>
